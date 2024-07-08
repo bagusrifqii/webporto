@@ -1,0 +1,320 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:orange;
+    color: #333;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Menu */
+nav {
+    background: wheat;
+    color: goldenrod;
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: orangered;
+    text-decoration: none;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+}
+
+.social-icons {
+    margin: 0 0.5rem;
+}
+
+.social-icons a {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.search-box input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Profile Section */
+#profile {
+    text-align: center;
+    padding: 2rem 0;
+    background:red;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #333;
+}
+
+#profile h1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+#profile p {
+    color: #666;
+}
+
+/*About Me Section */
+#about {
+    padding: 2rem 0;
+    background: yellow;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+    padding: 2rem;
+    background: yellow;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    background:yellow;
+    appearance: none;
+}
+
+progress::-webkit-progress-value {
+    background: #4caf50;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    min-height: 100vh; /* Ensures the section takes up at last one full viewport height */
+    padding: 2rem 0;
+    background: yellow;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - rem);
+    background: #eee;
+    border-radius: 5px;
+    overflow:hidden;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.portfolio-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-info p {
+    color: #666;
+}
+
+/* Blog Section */
+#blog {
+    min-height: 100vh; /* Ensures the section takes up at least one full viewport height */
+    padding: 2rem 0;
+    background: green;
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.blog-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.blog-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.blog-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.blog-item p {
+    color: #666;
+}
+
+.blog-item button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.blog-item button:hover {
+    background: #45a049;
+}
+
+/* Contact Section */
+#contact {
+    min-height: 100vh; /* Ensures the section takes up at least one full viewport height */
+    padding: 2rem 0;
+    background:yellowgreen;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: warp;
+}
+
+.contact-info {
+    flex: 1 1 40%;
+}
+
+.contact-form {
+    flex: 1 1 55%;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display:block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
